@@ -8,7 +8,7 @@ import 'api_2/api_2_home.dart';
 import 'api_3/api_3_home.dart';
 import 'api_4/api_4_home.dart';
 import 'api_5/api_5_home.dart';
-import 'api_6/api_6_home.dart';3
+import 'api_6/api_6_home.dart';
 import 'api_7/api_7_home.dart';
 
 void main() {
