@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:final_api/Response_class.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:http/http.dart';
 
 import 'api_7_model.dart';
 
@@ -17,7 +18,7 @@ class Providers extends ChangeNotifier{
     try {
       Loding=true;
       notifyListeners();
-      Response response = await dio.get(uri, options: Options(
+       var response = await dio.get(uri, options: Options(
           validateStatus: (status) {
             return status == 200 ||
                 status == 400 ||
