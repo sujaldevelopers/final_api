@@ -31,14 +31,13 @@ class _Api2HomeState extends State<Api2Home> {
         builder:
             (context, AsyncSnapshot<List<Map<String, dynamic>>?> snapshot) {
           if (snapshot.hasData) {
-            return Api2Ui(user: snapshot.data!);
+              return Api2Ui(user: snapshot.data!);
           } else if (snapshot.hasError) {
             return Text("Error : ${snapshot.error}");
           } else {
             return const SpinKitSpinningLines(
               color: Color(0xff336B87),
               size: 50.0,);
-
           }
         },
       ),

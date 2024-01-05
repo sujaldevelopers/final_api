@@ -6,6 +6,7 @@ nevigater (BuildContext context ,Widget page){
     return page;
   },));
 }
+// pokeapi Api: https://pokeapi.co/api/v2/pokemon/ditto
 class HelperBox extends StatelessWidget {
   final String text;
   final Widget page;

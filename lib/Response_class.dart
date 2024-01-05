@@ -1,10 +1,11 @@
 class ResponseClass<T> {
   String message;
   bool success;
-  T? data;
+  T?  data;
 
   ResponseClass({
     required this.message,
     required this.success,
-    this.data});
+    this.data,
+  });
 }
